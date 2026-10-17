@@ -1,0 +1,106 @@
+import { SyllabusAnalysisResult } from '../types/syllabus';
+
+export const sampleSyllabusData: SyllabusAnalysisResult = {
+  courseName: 'CS 189: Introduction to Machine Learning',
+  courseCode: 'CS 189',
+  instructor: 'Prof. Jonathan Shewchuk & Dr. Stella Yu',
+  semester: 'Fall 2026',
+  items: [
+    {
+      id: 'hw-1',
+      title: 'Homework 1: Linear Regression & Ridge Regularization',
+      type: 'assignment',
+      dueDate: '2026-10-24T23:59:00',
+      weight: '6%',
+      description: 'Implement ordinary least squares and closed-form ridge regression in Python (NumPy) with derivation writeup.',
+      prepingInfo: {
+        id: 'prep-hw-1',
+        duration: '8 hours across 3 days',
+        summary: 'Review Lecture 3-4 slides on gradient descent and matrix calculus. Derive normal equations before coding.',
+        prepDate: '2026-10-21',
+        milestones: [
+          { id: 'm-hw1-1', dayOffset: 3, title: 'Derive Normal Equations & Matrix Calculus', durationMinutes: 90 },
+          { id: 'm-hw1-2', dayOffset: 2, title: 'Implement Vectorized NumPy Loss Function', durationMinutes: 120 },
+          { id: 'm-hw1-3', dayOffset: 1, title: 'Writeup Plots & LaTeX Submission', durationMinutes: 90 },
+        ],
+      },
+    },
+    {
+      id: 'midterm-1',
+      title: 'Midterm Exam 1: Supervised Learning & Optimization',
+      type: 'midterm',
+      dueDate: '2026-11-04T18:00:00',
+      weight: '22%',
+      description: 'Closed-book examination covering Linear/Logistic Regression, Perceptrons, SVMs, and Decision Theory. One two-sided cheat sheet permitted.',
+      prepingInfo: {
+        id: 'prep-midterm-1',
+        duration: '18 hours across 6 days',
+        summary: 'Work through past exam problems (Fall 2023-2025). Focus on SVM duality, soft-margin formulation, and Gaussian Discriminant Analysis (QDA/LDA). Prepare double-sided formula sheet.',
+        prepDate: '2026-10-29',
+        milestones: [
+          { id: 'm-mt1-1', dayOffset: 6, title: 'Concept Review: Chapters 1-6 & Kernel Trick', durationMinutes: 180 },
+          { id: 'm-mt1-2', dayOffset: 4, title: 'Solve 2024 Practice Exam (Timed)', durationMinutes: 120 },
+          { id: 'm-mt1-3', dayOffset: 2, title: 'Review Weak Areas & Discussion Worksheets', durationMinutes: 150 },
+          { id: 'm-mt1-4', dayOffset: 1, title: 'Finalize Cheat Sheet & Rest', durationMinutes: 90 },
+        ],
+      },
+    },
+    {
+      id: 'proj-1',
+      title: 'Course Final Project: Kaggle Benchmark Challenge',
+      type: 'project',
+      dueDate: '2026-11-20T23:59:00',
+      weight: '25%',
+      description: 'Design and train ensemble model on image classification benchmark. Submit code repository, reproducible notebook, and 6-page IEEE format technical paper.',
+      prepingInfo: {
+        id: 'prep-proj-1',
+        duration: '28 hours across 12 days',
+        summary: 'Form teams of 3. Benchmark baseline models early. Implement data augmentation and hyperparameter tuning sweeps. Reserve 3 days for LaTeX paper draft and ablation studies.',
+        prepDate: '2026-11-08',
+        milestones: [
+          { id: 'm-proj-1', dayOffset: 12, title: 'Exploratory Data Analysis & Baseline Pipeline', durationMinutes: 180 },
+          { id: 'm-proj-2', dayOffset: 8, title: 'Feature Engineering & Model Exploration', durationMinutes: 240 },
+          { id: 'm-proj-3', dayOffset: 4, title: 'Ensemble Stacking & Error Analysis', durationMinutes: 180 },
+          { id: 'm-proj-4', dayOffset: 2, title: 'Draft Final Paper & Generate Visualizations', durationMinutes: 180 },
+        ],
+      },
+    },
+    {
+      id: 'quiz-1',
+      title: 'Online Conceptual Quiz: Neural Networks & Backprop',
+      type: 'quiz',
+      dueDate: '2026-11-28T22:00:00',
+      weight: '5%',
+      description: 'Timed 30-minute Gradescope quiz on forward/backward pass computations and activation functions.',
+      prepingInfo: {
+        id: 'prep-quiz-1',
+        duration: '3 hours',
+        summary: 'Re-derive backpropagation through a two-layer MLP by hand. Review vanishing gradient causes and ReLU/GELU properties.',
+        prepDate: '2026-11-27',
+        milestones: [
+          { id: 'm-qz-1', dayOffset: 1, title: 'Practice Chain Rule Gradient Computations', durationMinutes: 90 },
+        ],
+      },
+    },
+    {
+      id: 'final-exam',
+      title: 'Comprehensive Final Examination',
+      type: 'final',
+      dueDate: '2026-12-14T19:00:00',
+      weight: '35%',
+      description: 'Comprehensive 3-hour final examination covering the entire course curriculum including Unsupervised Learning (PCA, SVD, k-Means, EM algorithm) and Deep Learning architectures.',
+      prepingInfo: {
+        id: 'prep-final',
+        duration: '25 hours across 8 days',
+        summary: 'Comprehensive review. Master spectral theorem, SVD geometric interpretation, GMMs, and transformer attention mechanisms. Complete two full mock exams.',
+        prepDate: '2026-12-06',
+        milestones: [
+          { id: 'm-fin-1', dayOffset: 8, title: 'Review Unsupervised Learning: PCA, SVD, Clustering', durationMinutes: 180 },
+          { id: 'm-fin-2', dayOffset: 5, title: 'Review Supervised Learning & Neural Nets', durationMinutes: 180 },
+          { id: 'm-fin-3', dayOffset: 3, title: 'Complete Mock Exam 1 & Grade Mistakes', durationMinutes: 180 },
+          { id: 'm-fin-4', dayOffset: 1, title: 'Formula Sheet Review & High-yield Concepts', durationMinutes: 120 },
+        ],
+      },
+    },
+  ],
+};
