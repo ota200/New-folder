@@ -1,0 +1,6 @@
+{
+  "name": "GitHub Workflow Connect",
+  "description": "Orchestrate, dispatch, and monitor GitHub Actions workflows with live API integration and interactive connection setup.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
